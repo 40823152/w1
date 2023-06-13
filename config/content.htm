@@ -149,7 +149,20 @@ doc["cango_three_gears"].bind("click", cango_three_gears.do)
 <p><!-- editor2 結束 --></p>
 <hr/>
 <p></p>
-<h1>Bython</h1>
+<p></p><h1>nodencu_led_control</h1>
+<p>LED控制</p>
+<p><button id="onButton">打開</button> <button id="offButton">關閉</button></p>
+<script>
+$(document).ready(function() {
+      $("#onButton").click(function() {
+        $.get("/LED=ON");
+      });
+
+      $("#offButton").click(function() {
+        $.get("/LED=OFF");
+      });
+    });
+</script><h1>Bython</h1>
 <h2>1. Bython reads exam scores</h2>
 <!-- 導入 brython 程式庫 -->
 <p>

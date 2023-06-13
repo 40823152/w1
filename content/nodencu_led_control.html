@@ -2,6 +2,7 @@
         <head>
         <title>cmsimde_site</title>
         <meta charset="utf-8">
+<meta property="head" content="H1">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
         <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
@@ -140,16 +141,20 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content"> <a href='get_Meteorological_data.html'>Next</a> >> get_Meteorological_data<br /><h1>About</h1>
-<p>test</p>
-<p>四設計四甲</p>
-<p>40823152 | 黃暐翰</p>
-<p>replit    : <a href="https://replit.com/@40823152/w15">url</a></p>
-<p><a href="https://replit.com/~"><img src="./../images/replit.png"/></a></p>
-<p>github  : <a href="https://github.com/40823152/w15">url</a></p>
-<p><a href="https://github.com/"><img src="./../images/github.png"/></a></p>
-<p></p>
-<br /> <a href='get_Meteorological_data.html'>Next</a> >> get_Meteorological_data</div>
+    <div id="tipue_search_content">get_Meteorological_data << <a href='get_Meteorological_data.html'>Previous</a> <a href='Bython.html'>Next</a> >> Bython<br /><h1>nodencu_led_control</h1>
+<p>LED控制</p>
+<p><button id="onButton">打開</button> <button id="offButton">關閉</button></p>
+<script>
+$(document).ready(function() {
+      $("#onButton").click(function() {
+        $.get("/LED=ON");
+      });
+
+      $("#offButton").click(function() {
+        $.get("/LED=OFF");
+      });
+    });
+</script><br />get_Meteorological_data << <a href='get_Meteorological_data.html'>Previous</a> <a href='Bython.html'>Next</a> >> Bython</div>
         
     <!-- footer -->
       <div class="container">
