@@ -150,19 +150,16 @@ doc["cango_three_gears"].bind("click", cango_three_gears.do)
 <hr/>
 <p></p>
 <p></p><h1>nodencu_led_control</h1>
-<p>LED控制</p>
-<p><button id="onButton">打開</button> <button id="offButton">關閉</button></p>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
-$(document).ready(function() {
-      $("#onButton").click(function() {
-        $.get("/LED=ON");
-      });
-
-      $("#offButton").click(function() {
-        $.get("/LED=OFF");
-      });
-    });
-</script><h1>Bython</h1>
+function sendRequest(action) {
+      var xhr = new XMLHttpRequest();
+      xhr.open("GET", "http://192.168.2.204/"+ action, true);
+      xhr.send();
+    }
+</script>
+<p>LED控制</p>
+<p><button id="onButton" onclick="sendRequest('LED=ON')">打開</button> <button id="offButton" onclick="sendRequest('LED=OFF')">關閉</button></p><h1>Bython</h1>
 <h2>1. Bython reads exam scores</h2>
 <!-- 導入 brython 程式庫 -->
 <p>
