@@ -162,6 +162,29 @@ doc["cango_three_gears"].bind("click", cango_three_gears.do)
 <p><iframe height="200" src="https://thingspeak.com/channels/2147179/charts/2?bgcolor=%23ffffff&amp;color=%23d62020&amp;dynamic=true&amp;results=60&amp;title=%E6%BF%95%E5%BA%A6&amp;type=line" width="100%"></iframe></p>
 <p></p>
 <p><iframe height="200" src="https://thingspeak.com/channels/2147179/widgets/669103" style="border: 1px solid #cccccc;" width="100%"></iframe></p>
+<p></p>
+<h2>led_control</h2>
+<p></p>
+<p></p>
+<p><a href="http://192.168.137.81/"><img src="/images/button.png"/></a></p>
+<p></p>
+<p><iframe height="260" src="https://thingspeak.com/channels/2187484/widgets/670260" style="border: 1px solid #cccccc;" width="450"></iframe></p>
+<p></p>
+<p><iframe height="260" src="https://thingspeak.com/channels/2187484/charts/1?bgcolor=%23ffffff&amp;color=%23d62020&amp;dynamic=true&amp;results=60&amp;type=line&amp;update=15" style="border: 1px solid #cccccc;" width="450"></iframe></p>
+<p></p><h1>test</h1>
+<p></p>
+<p id="ledState">LED State: Unknown</p>
+<p><button onclick="toggleLED()">Toggle LED</button></p>
+<script>
+        function toggleLED() {
+            fetch('http://<NodeMCU_IP>/api/led', { method: 'POST' })
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById('ledState').innerText = 'LED State: ' + data.state;
+                });
+        }
+    
+</script>
 <p></p><h1>Bython</h1>
 <h2>1. Bython reads exam scores</h2>
 <!-- 導入 brython 程式庫 -->
