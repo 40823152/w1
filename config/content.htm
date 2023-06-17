@@ -45,7 +45,7 @@ brython({debug:1, pythonpath:['/static/','./../downloads/py/']});
 </p>
 <div>get_Meteorological_data</div>
 <hr/>
-<p><button id="add1to100part2">once</button><button id="cango_three_gears">every5_min</button><button id="user_input">user_input</button></p>
+<p><button id="add1to100part2">once</button><button id="cango_three_gears">every5_min</button><button id="user_input1">user_input1</button></p>
 <p><!-- 請注意, 這裡使用 Javascript 將 localStorage["kw_py_src2"] 中存在近端瀏覽器的程式碼, 由使用者決定存檔名稱--></p>
 <p>
 <script type="text/python3">
@@ -128,11 +128,11 @@ cango_three_gears_url = "https://gist.githubusercontent.com/40823152/f40cf5cbac1
 cango_three_gears = button2(cango_three_gears_url)
 doc["cango_three_gears"].bind("click", cango_three_gears.do)
 ################################## cango_three_gears end
-################################## user_input start
-cango_three_gears_url = "https://gist.githubusercontent.com/40823152/4128c861eaf4e6c4ec76ef4bb26fbe0a/raw/b94eab99ade594bfbed9858af99d8b79fcab137f/user_input.txt"
-user_input = button2(user_input_url)
-doc["user_input"].bind("click", user_input.do)
-################################## user_input end
+################################## user_input1 start
+user_input1_url = "https://gist.githubusercontent.com/40823152/c55fdb7415e6fd477ab04ff3672317d9/raw/be0ff45952f0314bd1889750e9e65232da03f006/user_input1.txt"
+user_input1 = button2(user_input1_url)
+doc["user_input1"].bind("click", user_input1.do)
+################################## user_input1 end
 </script>
 </p>
 <p><!-- add 1 to 100 part2 結束--></p>
