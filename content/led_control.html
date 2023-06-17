@@ -130,7 +130,7 @@ img.add_border {
                             <li><a href="./../blog/index.html">blog</a></li>
                         </ul>
                       </li>
-                     <li><a href='About.html'>About</a><li class='has-children'><a href='中央氣象局.html'>中央氣象局</a><ul class='dropdown'><li><a href='get_Meteorological_data.html'>get_Meteorological_data</a></li></ul><li class='has-children'><a href='nodeMCU.html'>nodeMCU</a><ul class='dropdown'><li><a href='DHT11溫濕度數據.html'>DHT11溫濕度數據</a><li><a href='led_control.html'>led_control</a></li></ul><li class='has-children'><a href='Bython.html'>Bython</a><ul class='dropdown'><li><a href='1. Bython reads exam scores.html'>1. Bython reads exam scores</a><li><a href='2. test.html'>2. test</a></li>
+                     <li><a href='About.html'>About</a><li class='has-children'><a href='中央氣象局.html'>中央氣象局</a><ul class='dropdown'><li><a href='get_Meteorological_data.html'>get_Meteorological_data</a></li></ul><li><a href='影像辨識.html'>影像辨識</a><li class='has-children'><a href='nodeMCU.html'>nodeMCU</a><ul class='dropdown'><li><a href='DHT11溫濕度數據.html'>DHT11溫濕度數據</a><li><a href='led_control.html'>led_control</a></li></ul><li class='has-children'><a href='Brython.html'>Brython</a><ul class='dropdown'><li><a href='1. Bython reads exam scores.html'>1. Bython reads exam scores</a><li><a href='2. test.html'>2. test</a></li>
                       </ul>
                 </nav>
               </div>
@@ -141,7 +141,7 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">DHT11溫濕度數據 << <a href='DHT11溫濕度數據.html'>Previous</a> <a href='Bython.html'>Next</a> >> Bython<br /><h1>led_control</h1>
+    <div id="tipue_search_content">DHT11溫濕度數據 << <a href='DHT11溫濕度數據.html'>Previous</a> <a href='Brython.html'>Next</a> >> Brython<br /><h1>led_control</h1>
 <p><a href="https://thingspeak.com/channels/2187484/private_show">https://thingspeak.com/channels/2187484/private_show</a> </p>
 <p></p>
 <p></p>
@@ -155,17 +155,17 @@ img.add_border {
 <p id="ledState"></p>
 <p>
 <script>
-        function toggleLED() {
+function toggleLED() {
             fetch('http://<NodeMCU_IP>/api/led', { method: 'POST' })
                 .then(response => response.json())
                 .then(data => {
                     document.getElementById('ledState').innerText = 'LED State: ' + data.state;
                 });
         }
-    
 </script>
 </p>
-<p></p><br />DHT11溫濕度數據 << <a href='DHT11溫濕度數據.html'>Previous</a> <a href='Bython.html'>Next</a> >> Bython</div>
+<p></p>
+<br />DHT11溫濕度數據 << <a href='DHT11溫濕度數據.html'>Previous</a> <a href='Brython.html'>Next</a> >> Brython</div>
         
     <!-- footer -->
       <div class="container">
