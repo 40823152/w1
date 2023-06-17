@@ -42,9 +42,9 @@ brython({debug:1, pythonpath:['/static/','./../downloads/py/']});
 <script src="/static/sylvester.js"></script>
 <script src="/static/PrairieDraw.js"></script>
 </p>
-<div></div>
+<div>get_Meteorological_data</div>
 <hr/>
-<p><button id="add1to100part2">get_Meteorological_dat</button></p>
+<p><button id="add1to100part2">once</button><button id="cango_three_gears">every5_min</button></p>
 <p><!-- 請注意, 這裡使用 Javascript 將 localStorage["kw_py_src2"] 中存在近端瀏覽器的程式碼, 由使用者決定存檔名稱--></p>
 <p>
 <script type="text/python3">
@@ -123,7 +123,7 @@ def add2(ev):
 doc["add1to100part2"].bind('click', add2)
 # 以下為運用 button2 class 的通用 gist 程式導入區
 ################################## cango_three_gears start
-cango_three_gears_url = "https://gist.githubusercontent.com/40823152/d16ab04b8e9c36e907e69eb73e13e788/raw/012be09a5ebe272f60f551d6e8d0da795ce2af45/get_Meteorological_data.txt"
+cango_three_gears_url = "https://gist.githubusercontent.com/40823152/f40cf5cbac1541a04907a543b8099db1/raw/8dbb7f07637456588120835b877ee33eabb359c1/get_Meteorological_data_5min.txt"
 cango_three_gears = button2(cango_three_gears_url)
 doc["cango_three_gears"].bind("click", cango_three_gears.do)
 ################################## cango_three_gears end
@@ -166,7 +166,7 @@ doc["cango_three_gears"].bind("click", cango_three_gears.do)
 <h2>led_control</h2>
 <p></p>
 <p></p>
-<p><a href="http://192.168.137.81/"><img src="/images/button.png"/></a></p>
+<p><a href="http://172.20.10.2/"><img src="/images/button.png"/></a></p>
 <p></p>
 <p><iframe height="260" src="https://thingspeak.com/channels/2187484/widgets/670260" style="border: 1px solid #cccccc;" width="450"></iframe></p>
 <p></p>
