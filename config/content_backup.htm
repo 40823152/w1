@@ -44,7 +44,7 @@ brython({debug:1, pythonpath:['/static/','./../downloads/py/']});
 </p>
 <div>get_Meteorological_data</div>
 <hr/>
-<p><button id="add1to100part2">once</button></p>
+<p><button id="add1to100part2">once</button><button id="cango_three_gears">every5_min</button></p>
 <p><!-- 請注意, 這裡使用 Javascript 將 localStorage["kw_py_src2"] 中存在近端瀏覽器的程式碼, 由使用者決定存檔名稱--></p>
 <p>
 <script type="text/python3">
@@ -123,7 +123,7 @@ def add2(ev):
 doc["add1to100part2"].bind('click', add2)
 # 以下為運用 button2 class 的通用 gist 程式導入區
 ################################## cango_three_gears start
-cango_three_gears_url = "https://gist.githubusercontent.com/40823152/d16ab04b8e9c36e907e69eb73e13e788/raw/012be09a5ebe272f60f551d6e8d0da795ce2af45/get_Meteorological_data.txt"
+cango_three_gears_url = "https://gist.githubusercontent.com/40823152/f40cf5cbac1541a04907a543b8099db1/raw/8dbb7f07637456588120835b877ee33eabb359c1/get_Meteorological_data_5min.txt"
 cango_three_gears = button2(cango_three_gears_url)
 doc["cango_three_gears"].bind("click", cango_three_gears.do)
 ################################## cango_three_gears end
@@ -154,16 +154,17 @@ doc["cango_three_gears"].bind("click", cango_three_gears.do)
 <p></p>
 <p></p>
 <p></p><h1>nodeMCU</h1><h2>DHT11溫濕度數據</h2>
-<p><iframe height="200" src="https://thingspeak.com/channels/2147179/charts/1?bgcolor=%23ffffff&amp;color=%23d62020&amp;dynamic=true&amp;results=60&amp;title=%E6%BA%AB%E5%BA%A6&amp;type=line" width="100%"></iframe></p>
+<p><a href="https://thingspeak.com/channels/2147179/private_show">https://thingspeak.com/channels/2147179/private_show</a> </p>
+<p><iframe height="260" src="https://thingspeak.com/channels/2147179/charts/1?bgcolor=%23ffffff&amp;color=%23d62020&amp;dynamic=true&amp;results=60&amp;title=%E6%BA%AB%E5%BA%A6&amp;type=line" width="450"></iframe></p>
 <p></p>
 <p></p>
-<p><iframe height="200" src="https://thingspeak.com/channels/2147179/widgets/669102" style="border: 1px solid #cccccc;" width="100%"></iframe></p>
+<p><iframe height="200" src="https://thingspeak.com/channels/2147179/widgets/669102" style="border: 1px solid #cccccc;" width="450"></iframe></p>
 <p></p>
-<p><iframe height="200" src="https://thingspeak.com/channels/2147179/charts/2?bgcolor=%23ffffff&amp;color=%23d62020&amp;dynamic=true&amp;results=60&amp;title=%E6%BF%95%E5%BA%A6&amp;type=line" width="100%"></iframe></p>
+<p><iframe height="260" src="https://thingspeak.com/channels/2147179/charts/2?bgcolor=%23ffffff&amp;color=%23d62020&amp;dynamic=true&amp;results=60&amp;title=%E6%BF%95%E5%BA%A6&amp;type=line" width="450"></iframe></p>
 <p></p>
-<p><iframe height="200" src="https://thingspeak.com/channels/2147179/widgets/669103" style="border: 1px solid #cccccc;" width="100%"></iframe></p>
-<p></p>
-<h2>led_control</h2>
+<p><iframe height="200" src="https://thingspeak.com/channels/2147179/widgets/669103" style="border: 1px solid #cccccc;" width="450"></iframe></p>
+<p></p><h2>led_control</h2>
+<p><a href="https://thingspeak.com/channels/2187484/private_show">https://thingspeak.com/channels/2187484/private_show</a> </p>
 <p></p>
 <p></p>
 <p><a href="http://172.20.10.2/"><img src="/images/button.png"/></a></p>
